@@ -16,23 +16,34 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Balance"
-                android:layout_weight="1"/>
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="0.0"
-                android:layout_weight="1"/>
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Expense's"
+            android:gravity="center_horizontal"
+            android:background="@color/teal_700"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
 
         <ListView
             android:id="@+id/list"
@@ -40,13 +51,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            />
+            android:layout_marginBottom="15dp"/>
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Expenses/Income" />
+            android:text="Add Expenses/Income"
+            android:gravity="center_horizontal"/>
 
 
     </LinearLayout>

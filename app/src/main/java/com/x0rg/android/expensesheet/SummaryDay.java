@@ -15,10 +15,10 @@ public class SummaryDay {
         return "" + mBalanceAmount;
     }
     public String getCreditAmount(){
-        return "+" + mCreditAmount;
+        return "Credit: +" + mCreditAmount;
     }
     public String getDebtAmount() {
-        return "-" + mDebtAmount;
+        return "Debt: -" + mDebtAmount;
     }
 
 }
