@@ -2,7 +2,10 @@ package com.x0rg.android.expensesheet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -13,6 +16,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button addEvents = (Button) findViewById(R.id.addEventsButton);
+        addEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent addEventsIntent = new Intent(MainActivity.this, AddEvents.class);
+                startActivity(addEventsIntent);
+            }
+        });
 
         final ArrayList<SummaryDay> days = new ArrayList<SummaryDay>();
         days.add(new SummaryDay(12, 13,14));
