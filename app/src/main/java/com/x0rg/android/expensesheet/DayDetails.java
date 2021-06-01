@@ -1,6 +1,8 @@
 package com.x0rg.android.expensesheet;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,5 +11,15 @@ public class DayDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_item_details);
+        Intent dayIntent = getIntent();
+        SummaryDay day = (SummaryDay) dayIntent.getSerializableExtra("dayObject");
+        updateDetailsUI(day);
     }
+
+    public void updateDetailsUI(SummaryDay day){
+        TextView detailsBalance = (TextView) findViewById(R.id.details_balanceNet);
+        detailsBalance.setText(day.getBalanceAmount());
+
+    }
+
 }

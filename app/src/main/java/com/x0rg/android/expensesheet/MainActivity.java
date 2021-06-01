@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 SummaryDay day = days.get(position);
 
                 Intent dayIntent = new Intent(MainActivity.this, DayDetails.class);
+                dayIntent.putExtra("dayObject",day);
                 startActivity(dayIntent);
 
             }

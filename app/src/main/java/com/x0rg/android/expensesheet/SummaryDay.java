@@ -1,6 +1,8 @@
 package com.x0rg.android.expensesheet;
 
-public class SummaryDay {
+import java.io.Serializable;
+
+public class SummaryDay implements Serializable {
     private int mBalanceAmount;
     private int mCreditAmount;
     private int mDebtAmount;
