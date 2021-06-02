@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         final ArrayList<SummaryDay> days = new ArrayList<SummaryDay>();
         days.add(new SummaryDay(12, 13,14));
         days.add(new SummaryDay(10,11,12));

@@ -33,6 +33,9 @@ public class SummaryDayAdapter extends ArrayAdapter<SummaryDay> {
         TextView todayDebt = (TextView) listItemView.findViewById(R.id.today_debt);
         todayDebt.setText(currentDay.getDebtAmount());
 
+        TextView date = (TextView) listItemView.findViewById(R.id.date);
+        date.setText(currentDay.getDate());
+
         return listItemView;
     }
 }
