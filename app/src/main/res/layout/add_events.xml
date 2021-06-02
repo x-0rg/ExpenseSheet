@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:text="Description" />
 
-
     <Button
         android:id="@+id/credit_amount"
         android:layout_width="wrap_content"
