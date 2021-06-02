@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="5dp"
-        android:background="#A52A2A">
+        android:background="#800000">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,13 +25,15 @@
                 android:text="Balance"
                 android:textSize="25dp"
                 android:layout_weight="1"
+                android:textColor="#FFFFFF"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="0.0"
+                android:text="2500.0"
                 android:textSize="25dp"
                 android:layout_weight="1"
+                android:textColor="#FFFFFF"
                 android:gravity="center_horizontal"/>
 
         </LinearLayout>
@@ -43,6 +45,7 @@
             android:gravity="center_horizontal"
             android:background="@color/teal_700"
             android:textSize="20dp"
+            android:backgroundTint="#808000"
             android:layout_marginTop="15dp"/>
 
         <ListView
