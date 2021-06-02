@@ -20,6 +20,16 @@ public class DayDetails extends AppCompatActivity {
         TextView detailsBalance = (TextView) findViewById(R.id.details_balanceNet);
         detailsBalance.setText(day.getBalanceAmount());
 
+        TextView detailsDate = (TextView) findViewById(R.id.details_date);
+        detailsDate.setText(day.getDate());
+
+
+        TextView detailsCredit = (TextView) findViewById(R.id.details_credit);
+        detailsCredit.setText(day.getCreditAmount());
+
+        TextView detailsDebt = (TextView) findViewById(R.id.details_debt);
+        detailsDebt.setText(day.getDebtAmount());
+
     }
 
 }

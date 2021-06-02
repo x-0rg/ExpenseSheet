@@ -47,15 +47,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="15dp"
-            android:text="Net Credit" />
+            android:text="Net " />
 
         <TextView
             android:id="@+id/details_credit"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:text="30" />
 
         <TextView
@@ -64,15 +63,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="15dp"
-            android:text="Net Debt" />
+            android:text="Net " />
 
         <TextView
             android:id="@+id/details_debt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:text="30" />
 
     </LinearLayout>
